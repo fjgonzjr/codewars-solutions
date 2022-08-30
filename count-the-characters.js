@@ -9,4 +9,5 @@
 // Good luck.
 
 // My Solution: 
-const countChar = (s,c) => s.split('').reduce((a,b) => a + (b === c ? 1 : 0),0)
+const countChar = (s,c) => s.split('').reduce((a,b) => a + (b.toLowerCase() === c.toLowerCase() ? 1 : 0),0)
+
